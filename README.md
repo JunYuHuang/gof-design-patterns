@@ -2,6 +2,10 @@
 
 The 23 GoF design patterns in TypeScript from scratch.
 
+Each pattern has a folder with code and tests that implement the pattern.
+
+Each folder's README has instructions on how to run the code.
+
 ## Completed Design Patterns
 
 | Done | Pattern Name            | Pattern Class / Type |
