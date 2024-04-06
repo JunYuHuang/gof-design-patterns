@@ -1,6 +1,6 @@
 # Strategy
 
-TODO
+The Strategy pattern allows changing an object's behaviour while the program is running.
 
 ## Quick Start
 

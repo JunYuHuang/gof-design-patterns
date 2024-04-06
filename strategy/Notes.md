@@ -1,11 +1,22 @@
 # Notes
 
-- name: Strategy
+- pattern name: Strategy
 - problem:
-  - TODO
+  - a problem needs different algorithms or ways to solve it
+  - the way to solve the problem changes over the problem's life
 - solution:
-  - TODO
+  - Strategy pattern lets a superclass change its method of solving that problem during run time
 - trade-offs:
-  - TODO
+  - pros
+    - group related algorithms
+    - fill-in for subclassing
+    - remove conditionals
+    - more usage options
+  - cons
+    - client code must know different strategies
+    - less performant
+    - more complexity / code
 - misc
-  - TODO
+  - like picking a unique character in a video game for each challenge
+  - prevents forced implementation of superclass-inherited methods in a subclass
+  - uses interfaces as supertype / classes for subclasses to inherit and implement with other classes
