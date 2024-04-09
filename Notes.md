@@ -5,8 +5,31 @@
 - 23 patterns total each under 1 of 3 types
 - 3 types / groups of patterns:
   - creational (5)
+    - abstract factory
+    - factory method
+    - builder
+    - prototype
+    - singleton
   - structural (7)
+    - adapter
+    - bridge
+    - composite
+    - decorator
+    - facade
+    - flyweight
+    - proxy
   - behavioral (11)
+    - chain of responsibility
+    - command
+    - interpreter
+    - iterator
+    - mediator
+    - memento
+    - observer
+    - state
+    - strategy
+    - template method
+    - visitor
 - 8 basic patterns
   - abstract factory (C)
   - factory method (C)
@@ -20,3 +43,60 @@
 - 2 object-oriented design principles
   - bind to interfaces over implementations
   - composition over inheritance
+
+## Summary Of Patterns
+
+- abstract factory:
+  - like having different LEGO block sets for making different parts of a toy castle?
+- adapter:
+  - like a translator between 2 people who each speak a different language
+- bridge:
+  - like a switch that links a toy car from unlike remote controls (e.g. button-only, joystick, etc.)
+- builder:
+  - like a tool for making a complex object step by step from a blueprint
+- chain of responsibility:
+  - like a few handlers linked sequentially where each handler deals some request or passes it to the next handler
+- command:
+  - pass requests wrapped in objects between classes
+- composite:
+  - like being a wizard who creates spells and arranges them into spellbooks
+- decorator:
+  - like adding extra ingredients to a magical potion to improves its power
+- facade:
+  - like using a magical key to unlock a complex door to skip solving the puzzle that guards the door
+- factory method:
+  - like having a magical potion making machine that can create different types of potions
+- flyweight:
+  - like efficiently creating many similar yet unlike toy soldiers via a magical mold
+- interpreter:
+  - like having a wizard who can translate and execute commands in a text written in a special language
+- iterator:
+  - like getting and playing with each toy in a box one by one via a magical wand
+- mediator:
+  - like a party planner who handles chats and actions between guests at a party
+- memento:
+  - like saving and restoring progress in a video game via a magical spell
+- observer:
+  - i.e. pub-sub; like an assistant who watches for changes to an object's state and tells you when those changes occur
+- prototype:
+  - i.e. clone; like making copies of existing objects via a magic spell and customizing them to make them unique
+- proxy:
+  - i.e. substitute; like a guardian that controls access to your castle for you
+- singleton:
+  - like a magical spell applied to a treasure chest so that there is only that one chest in existence at any time
+- state:
+  - like being a shape-shifter who can turn into unlike animals based on my mood
+- strategy:
+  - like picking a different character in a video game for each challenge
+- template method:
+  - like a recipe book with brewing potion instructions that makes it easy to add new potions
+- visitor:
+  - like being a wizard who interacts with unlike creatures in a forest in a tailored way
+
+## Misc
+
+- abstract factory vs factory method?
+  - abstract factory is for multiple factories (that are related)
+  - factory method is for 1 factory
+- adapter vs bridge?
+  - TODO
