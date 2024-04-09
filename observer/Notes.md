@@ -1,0 +1,32 @@
+# Notes
+
+- name: Observer
+- problem:
+  - many objects need updates and notices from a single source
+- solution:
+  - Observer pattern makes a subscription system for a source that changes to send updates and notices to its many watchers
+- trade-offs:
+  - pros
+    - loose coupling between subject and observer(s)
+    - supports broadcasts
+  - cons
+    - unexpected updates
+- misc
+  - like pub-sub but not exactly
+  - pub-sub vs observer pattern?
+    - same
+      - communication between objects
+      - loose coupling
+      - notice tool
+    - pub-sub
+      - many-to-many
+      - more control over notices
+      - flexible and scalable
+      - subs and pubs don't know each other
+      - subs and pubs chat via a middleman / broker
+    - observer
+      - 1-to-many
+      - few control over notices
+      - simpler and more direct
+      - observers know the subje.cts
+      - subject keeps a list of observers
