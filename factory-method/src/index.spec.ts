@@ -1,8 +1,14 @@
 import { describe, expect, test } from "@jest/globals";
-// import { sum } from "./index";
+import { Dialog, WindowsDialog, WebDialog } from "./index";
 
-describe("Factory Pattern", () => {
+describe("Factory Method Pattern", () => {
   test("works", () => {
-    // TODO
+    let dialog: Dialog;
+
+    dialog = new WindowsDialog();
+    expect(dialog.render()).toStrictEqual("Windows Button");
+
+    dialog = new WebDialog();
+    expect(dialog.render()).toStrictEqual("Web Button");
   });
 });

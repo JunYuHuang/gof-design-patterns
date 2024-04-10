@@ -12,7 +12,7 @@ Each folder's README has instructions on how to run the code.
 | ---- | ----------------------- | -------------------- |
 |      | Abstract Factory        | Creational           |
 |      | Builder                 | Creational           |
-|      | Factory Method          | Creational           |
+| ✅   | Factory Method          | Creational           |
 |      | Prototype               | Creational           |
 |      | Singleton               | Creational           |
 |      | Adapter                 | Structural           |

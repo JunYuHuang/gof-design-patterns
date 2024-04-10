@@ -1,6 +1,6 @@
 # Factory Method
 
-The Factory Method pattern TODO
+The Factory Method pattern delays a super class' object creation to its subclasses.
 
 ## Quick Start
 
