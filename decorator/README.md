@@ -1,6 +1,6 @@
 # Decorator
 
-The decorator pattern uses a wrapper class to extend an (inner) object's power and features.
+The Decorator pattern uses a wrapper class to extend an (inner) object's power and features.
 
 ## Quick Start
 
