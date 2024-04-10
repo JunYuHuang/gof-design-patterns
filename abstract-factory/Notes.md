@@ -1,0 +1,24 @@
+# Notes
+
+- name: Abstract Factory
+- problem:
+  - need 1 place to make sets of related objects
+  - don't want list the objects' concrete classes
+- solution:
+  - use 1 interface to create sets of related objects without listing their classes
+- trade-offs:
+  - pros
+    - sets concrete classes apart
+    - makes switching product sets easy
+    - supports consistency among products (i.e. compatibility)
+  - cons
+    - hard to support new product types
+    - more complexity / code
+- misc
+  - AKA kit
+  - like system for creating, using, and switching the visual theme for an app
+  - abstract factory vs factory method?
+    - abstract factory
+      - is like a superset of factory method
+      - is more complicated than factory method
+      - is like the set / group version of factory method
