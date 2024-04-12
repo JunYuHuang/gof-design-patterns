@@ -1,0 +1,33 @@
+# Notes
+
+- name: Template Method
+- problem:
+  - an algorithm has some parts that always works the same way and other parts that can be left for the algorithm's subclasses to do
+  - common behaviour from subclasses can be factored out into a common super class
+  - such subclasses may do extra stuff
+- solution:
+  - set the base algorithm in an super class' method while letting subclasses define some steps
+  - keeps an algorithm's structure or order the same while letting some of its steps to be changed or set by subclasses
+- trade-offs:
+  - pros
+    - inverted control
+    - lets its subclasses / client code override only certain steps of the template method
+    - reduces duplicate code
+  - cons
+    - may limit some subclasses
+    - may violate Liskov Substitution principle
+    - hard to maintain with more steps
+- misc
+  - like a recipe book with brewing potion instructions that makes it easy to add new potions
+  - AKA abstract class + inheritance variant
+  - abstract class with
+    - abstract methods
+    - template concrete method(s) that each
+      - call the abstract methods in some order
+      - may call hooks as part of the order
+      - cannot be overridden by its concrete subclasses
+    - or without hooks
+    - hooks: concrete methods each with some preset behaviour
+      - does nothing by default
+      - overridable by its concrete subclasses
+      - follows Hollywood principle: "Don't call us, we'll call you"

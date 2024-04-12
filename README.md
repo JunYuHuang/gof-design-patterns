@@ -31,5 +31,5 @@ Each folder's README has instructions on how to run the code.
 | ✅   | Observer                | Behavioral           |
 |      | State                   | Behavioral           |
 | ✅   | Strategy                | Behavioral           |
-|      | Template Method         | Behavioral           |
+| ✅   | Template Method         | Behavioral           |
 |      | Visitor                 | Behavioral           |
