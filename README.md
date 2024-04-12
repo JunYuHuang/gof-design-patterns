@@ -19,7 +19,7 @@ Each folder's README has instructions on how to run the code.
 |      | Bridge                  | Structural           |
 |      | Composite               | Structural           |
 | ✅   | Decorator               | Structural           |
-|      | Façade                  | Structural           |
+| ✅   | Façade                  | Structural           |
 |      | Flyweight               | Structural           |
 |      | Proxy                   | Structural           |
 |      | Chain of Responsibility | Behavioral           |
