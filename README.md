@@ -15,7 +15,7 @@ Each folder's README has instructions on how to run the code.
 | ✅   | Factory Method          | Creational           |
 |      | Prototype               | Creational           |
 | ✅   | Singleton               | Creational           |
-|      | Adapter                 | Structural           |
+| ✅   | Adapter                 | Structural           |
 |      | Bridge                  | Structural           |
 |      | Composite               | Structural           |
 | ✅   | Decorator               | Structural           |

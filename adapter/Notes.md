@@ -1,0 +1,24 @@
+# Notes
+
+- name: Adapter
+- problem:
+  - need an existing class but can't work with it (via its interface) directly
+- solution:
+  - create a middle man translator layer that makes some existing class (the service) usable by other code (the client)
+- trade-offs (object adapters):
+  - pros
+    - single responsibility
+    - open-closed; adapter can easily add new features to all adaptees (adaptee itself and its subclasses)
+  - cons
+    - more complexity
+    - harder to override adaptee behaviour (compared to class adapters)
+- misc
+  - two adapter types: class adapters and object adapters
+  - class vs object adapters:
+    - class adapters
+      - needs multiple (class) inheritance support
+      - inherits / subclasses BOTH the client AND adaptee classes
+      - more complex
+    - object adapters
+      - implements 1 interface or inherits from the 1 client class
+      - more simple
