@@ -17,3 +17,8 @@
     - more complexity / code
 - misc
   - like ordering food at a restaurant
+  - like a gun firing a cartridge / round
+  - command objects do not run themselves
+  - caller object runs commands
+  - commands objects with a callback function
+  - Redux.js library does NOT follow command pattern or follows a command pattern variant?

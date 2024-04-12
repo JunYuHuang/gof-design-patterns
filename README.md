@@ -23,7 +23,7 @@ Each folder's README has instructions on how to run the code.
 |      | Flyweight               | Structural           |
 |      | Proxy                   | Structural           |
 |      | Chain of Responsibility | Behavioral           |
-|      | Command                 | Behavioral           |
+| ✅   | Command                 | Behavioral           |
 |      | Interpreter             | Behavioral           |
 |      | Iterator                | Behavioral           |
 |      | Mediator                | Behavioral           |
