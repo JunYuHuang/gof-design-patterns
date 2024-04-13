@@ -25,7 +25,7 @@ Each folder's README has instructions on how to run the code.
 |      | Chain of Responsibility | Behavioral           |
 | ✅   | Command                 | Behavioral           |
 |      | Interpreter             | Behavioral           |
-|      | Iterator                | Behavioral           |
+| ✅   | Iterator                | Behavioral           |
 |      | Mediator                | Behavioral           |
 |      | Memento                 | Behavioral           |
 | ✅   | Observer                | Behavioral           |
