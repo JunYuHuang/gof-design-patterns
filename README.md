@@ -17,7 +17,7 @@ Each folder's README has instructions on how to run the code.
 | ✅   | Singleton               | Creational           |
 | ✅   | Adapter                 | Structural           |
 |      | Bridge                  | Structural           |
-|      | Composite               | Structural           |
+| ✅   | Composite               | Structural           |
 | ✅   | Decorator               | Structural           |
 | ✅   | Façade                  | Structural           |
 |      | Flyweight               | Structural           |
