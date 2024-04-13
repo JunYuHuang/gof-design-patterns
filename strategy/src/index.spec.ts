@@ -7,7 +7,7 @@ import {
   MathOperation
 } from "./index";
 
-describe("MathOperation class", () => {
+describe("Strategy Pattern", () => {
   test("works", () => {
     // test add
     const mathOperation = new MathOperation(
