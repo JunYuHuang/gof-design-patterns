@@ -1,42 +1,42 @@
 interface Button {
-    render: () => string;
+  render: () => string;
 }
 
 class WindowsButton implements Button {
-    render() {
-        return "Windows Button";
-    }
+  render() {
+    return "Windows Button";
+  }
 }
 
 class WebButton implements Button {
-    render() {
-        return "Web Button";
-    }
+  render() {
+    return "Web Button";
+  }
 }
 
 abstract class Dialog {
-    abstract createButton(): Button;
+  abstract createButton(): Button;
 
-    render() {
-        const button = this.createButton();
-        return button.render();
-    }
+  render() {
+    const button = this.createButton();
+    return button.render();
+  }
 }
 
 class WindowsDialog extends Dialog {
-    createButton() {
-        return new WindowsButton();
-    }
+  createButton() {
+    return new WindowsButton();
+  }
 }
 
 class WebDialog extends Dialog {
-    createButton() {
-        return new WebButton();
-    }
+  createButton() {
+    return new WebButton();
+  }
 }
 
 export {
-    Dialog,
-    WindowsDialog,
-    WebDialog
+  Dialog,
+  WindowsDialog,
+  WebDialog
 }
