@@ -2,13 +2,24 @@
 
 - name: State
 - problem:
-  - TODO
+  - have an object that works differently based on its current state
+  - there are many unique states
+  - state specific code changes often
+  - class has too many conditionals that change its behaviour based on its current field values
+  - much copied code across similar states
 - solution:
-  - TODO
+  - lets an object change its behaviour when its internal state changes via a common state interface, concrete states, and a context state manager class
 - trade-offs:
   - pros
-    - TODO
+    - limits and splits behaviour for unlike states
+    - makes state changes clear
+    - can share state objects
   - cons
-    - TODO
+    - may be extra if have few states or state hardly changes
 - misc
-  - TODO
+  - like being a shape-shifter who can turn into unlike animals based on my mood
+  - state pattern = context class + state interface + concrete states
+  - context class is the manager and container of the current state
+  - client code that uses the context object directly creates a new state object at most once (at initialisation of the context object)
+  - context methods that call state methods change based on what the current state is
+  - methods in concrete state classes that implement the state interface may or may not change the current state in the context

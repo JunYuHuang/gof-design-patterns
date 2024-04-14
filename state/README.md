@@ -1,6 +1,6 @@
 # State
 
-The State pattern TODO
+The State pattern lets an object change its behaviour when its internal state changes.
 
 ## Quick Start
 
