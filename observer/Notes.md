@@ -28,5 +28,5 @@
       - 1-to-many
       - few control over notices
       - simpler and more direct
-      - observers know the subje.cts
+      - observers know the subjects
       - subject keeps a list of observers
