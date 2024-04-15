@@ -16,7 +16,7 @@ Each folder's README has instructions on how to run the code.
 |      | Prototype               | Creational           |
 | ✅   | Singleton               | Creational           |
 | ✅   | Adapter                 | Structural           |
-|      | Bridge                  | Structural           |
+| ✅   | Bridge                  | Structural           |
 | ✅   | Composite               | Structural           |
 | ✅   | Decorator               | Structural           |
 | ✅   | Façade                  | Structural           |

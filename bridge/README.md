@@ -1,6 +1,6 @@
 # Bridge
 
-The Bridge pattern TODO
+The Bridge pattern splits an interface from its working guts (i.e. implementation) so they can each differ by worked on separately.
 
 ## Quick Start
 

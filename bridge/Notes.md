@@ -2,13 +2,37 @@
 
 - name: Bridge
 - problem:
-  - TODO
+  - want to split a monolithic class with feature variants
+  - must extend a class in many indie aspects
+  - must switch working guts at runtime
 - solution:
-  - TODO
+  - splits an interface from its working guts so they can each differ separately
 - trade-offs:
   - pros
-    - TODO
+    - splits interface from working internals or implementation
+    - more extensible
+    - hides working guts from client code
   - cons
-    - TODO
+    - more complexity
 - misc
-  - TODO
+  - like a switch that links a toy car to unlike remote controls (e.g. button-only, joystick, etc.)
+  - like facade + remote proxy
+  - bridge vs adapter
+    - both
+      - point at existing type / object
+    - bridge
+      - define both the interface and working means / internals
+      - can set implementation at runtime
+    - adapter
+      - define only the interface
+      - can NOT set implementation at runtime
+  - interface and internals often have unlike interfaces
+  - splits interface from working means
+  - =
+    - abstraction class +
+    - implementation interface +
+    - concrete implementations +
+    - abstraction concrete subclass (optional)
+  - abstraction object references implementation object
+  - abstraction class has high level methods
+  - concrete implementations have low level methods
