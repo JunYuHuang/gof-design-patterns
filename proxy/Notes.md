@@ -2,13 +2,27 @@
 
 - name: Proxy
 - problem:
-  - TODO
+  - some object needs to be controlled by another object
+  - must limit access to controlled object for some reason e.g. security, performance, speed, etc.
 - solution:
-  - TODO
+  - make a placeholder object that wraps and controls access to the original object
+  - the controlled and placeholder object both share the same interface
 - trade-offs:
   - pros
-    - TODO
+    - remote proxies can hide an object's real address space
+    - virtual proxies can lift performance e.g. JIT object creation
+    - protection proxies and smart references can do side effects on object access
+    - can hide control subject / service object from client
+    - can manage subject / service life when clients don't care
+    - proxy works even if subject / servie is not ready
+    - can make new proxies without changing service or client (open-closed)
   - cons
-    - TODO
+    - more complexity
+    - slower response from real subject / service
 - misc
-  - TODO
+  - i.e. substitute; like a guardian that controls access to your castle for you
+  - is structurally like a decorator
+  - like middleware that wraps and shares the same interface as the real object?
+  - many proxy types: e.g. remote, virtual, protection, caching, etc.
+  - like a local rep / agent
+  - = subject interface + real subject class + proxy class

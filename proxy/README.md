@@ -1,6 +1,6 @@
 # Proxy
 
-The Proxy pattern TODO
+The Proxy pattern allows making and using a rep object to wrap and control access to another object. The code here is an example of a logging proxy.
 
 ## Quick Start
 
