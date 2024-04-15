@@ -100,3 +100,11 @@
   - factory method is for 1 factory
 - adapter vs bridge?
   - TODO
+- MVC pattern is a compound pattern
+  - = Observer (Model) + Composite (View) + Strategy (Controller)
+- anti-patterns: bad solutions to problems
+  - golden hammer: use 1 tech for everything
+  - God Class: 1 class controls everything in an app
+  - magic numbers: values with unexplained meaning (e.g. no label)
+  - Poltergeists: controller classes that only call methods on other classes
+  - big ball of mud: app with no visible architecture
