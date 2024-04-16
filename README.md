@@ -11,7 +11,7 @@ Each folder's README has instructions on how to run the code.
 | Done | Pattern Name            | Pattern Class / Type |
 | ---- | ----------------------- | -------------------- |
 | ✅   | Abstract Factory        | Creational           |
-|      | Builder                 | Creational           |
+| ✅   | Builder                 | Creational           |
 | ✅   | Factory Method          | Creational           |
 |      | Prototype               | Creational           |
 | ✅   | Singleton               | Creational           |

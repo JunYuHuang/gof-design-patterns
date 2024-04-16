@@ -1,6 +1,6 @@
 # Builder
 
-The Builder pattern TODO
+The Builder pattern lets making complex objects step by step as with varied configs via the same maker code.
 
 ## Quick Start
 

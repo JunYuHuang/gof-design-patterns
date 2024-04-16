@@ -2,13 +2,23 @@
 
 - name: Builder
 - problem:
-  - TODO
+  - want to rid "telescoping constructor" anti-pattern / issue
+  - want to make a product with unlike configs
+  - want to build Composite trees or complex objects
 - solution:
-  - TODO
+  - lets making complex objects step by step as unlike configs or types via the same maker code
 - trade-offs:
   - pros
-    - TODO
+    - can vary a product's internal guts
+    - splits making from portrayal code
+    - better control over building action
   - cons
-    - TODO
+    - more complexity
 - misc
-  - TODO
+  - like a tool for making a complex object step by step from a blueprint
+  - splits the responsibility of a class' constructor into another class with separate methods to make the initial class incrementally
+  - =
+    - product class +
+    - product builder interface +
+    - concrete product builder class(es) +
+    - director class that manages building order / process (optional)
