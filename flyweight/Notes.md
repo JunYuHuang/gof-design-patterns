@@ -2,13 +2,38 @@
 
 - name: Flyweight
 - problem:
-  - TODO
+  - program must handle many objects that are memory heavy
+  - such objects hold duplicate state that can be shared
 - solution:
-  - TODO
+  - allows handling many objects with low memory via object sharing / caching
 - trade-offs:
   - pros
-    - TODO
+    - saves much memory / RAM
+    - unifies state for many virtual objects in 1 place
   - cons
-    - TODO
+    - may use more CPU cycles for RAM savings
+    - more complexity
+    - objects cannot work freely from other objects
 - misc
-  - TODO
+  - like efficiently creating many similar yet unlike toy soldiers via a magical mold
+  - like using an image sprite
+  - moves costly copied state into a shared, unique object
+  - create many copies of memory-cheap context classes that only store the unique traits of the shared object
+  - aka caching via sharing a common object
+  - =
+    - flyweight interface (optional) +
+    - shared flyweight concrete class +
+    - unique / context flyweight concrete class +
+    - flyweight factory concrete class (optional) +
+    - client code
+  - shared flyweight
+    - read-only
+    - stores (intrinsic) values that don't change
+    - has methods that get and use extrinsic state from contexts
+    - is heavy / expensive to make
+  - unique flyweight / context
+    - read + write
+    - stores unique values that are passed to the shared flyweight
+    - is light / cheap to make
+  - flyweight object's full state = shared flyweight + context
+  - factory makes or gets a current shared flyweight + context

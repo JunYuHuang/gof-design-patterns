@@ -1,6 +1,6 @@
 # Flyweight
 
-The Flyweight pattern TODO
+The Flyweight pattern allows holding many objects with low memory via object sharing or caching.
 
 ## Quick Start
 

@@ -20,7 +20,7 @@ Each folder's README has instructions on how to run the code.
 | ✅   | Composite               | Structural           |
 | ✅   | Decorator               | Structural           |
 | ✅   | Façade                  | Structural           |
-|      | Flyweight               | Structural           |
+| ✅   | Flyweight               | Structural           |
 | ✅   | Proxy                   | Structural           |
 | ✅   | Chain of Responsibility | Behavioral           |
 | ✅   | Command                 | Behavioral           |
