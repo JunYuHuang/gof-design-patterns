@@ -1,6 +1,6 @@
 # Chain Of Responsibility
 
-The Chain Of Responsibility pattern TODO
+The Chain Of Responsibility pattern allows passing requests thru an ordered line of request handlers. Each handler either processes a request (to break the chain) or passes it to the next handler but not both.
 
 ## Quick Start
 

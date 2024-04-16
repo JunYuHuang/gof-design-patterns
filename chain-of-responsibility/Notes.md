@@ -2,13 +2,31 @@
 
 - name: Chain Of Responsibility
 - problem:
-  - TODO
+  - need to process unlike requests in varied ways
+  - don't know requests' types or order
+  - must run handlers in a certain order
 - solution:
-  - TODO
+  - allows passing requests thru an ordered line of request handlers
+  - each handler either processes a request and breaks the chain or passes the request to the next handler
 - trade-offs:
   - pros
-    - TODO
+    - less coupling (between request receiver and sender)
+    - easier to add more power to objects
+    - can set request handling order
   - cons
-    - TODO
+    - request may be unhandled
 - misc
-  - TODO
+  - like a few handlers linked sequentially where each handler deals some request or passes it to the next handler
+  - like traversing thru and stopping at a node in a linked list
+  - each handler either processes or passes request to next handler
+    - cannot be both
+  - each handler in the chain makes 2 decisions
+    - process the request or not
+    - pass the request to the next handler or not
+    - can do both of the above or just one?
+  - =
+    - handler interface +
+    - base handler class (optional) +
+    - concrete handler class(es) +
+    - request concrete class or primitive value (optional?) +
+    - client code
