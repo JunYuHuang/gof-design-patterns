@@ -1,6 +1,6 @@
 # Mediator
 
-The Mediator pattern TODO
+The Mediator pattern lowers direct links between objects by making them talk to each other via a middle / broker object.
 
 ## Quick Start
 

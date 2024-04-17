@@ -2,13 +2,36 @@
 
 - name: Mediator
 - problem:
-  - TODO
+  - tight coupling between some classes
+  - can't reuse a component in other code because of its dependencies on others
+  - too many component subclasses for reusing behaviour
 - solution:
-  - TODO
+  - lowers direct links between objects by making them talk to each other via a middle / broker object
 - trade-offs:
   - pros
-    - TODO
+    - limits subclassing; more colleague reuse
+    - reduces coupling
+    - makes object contact rules simple
+    - unifies control
+    - easy to add new mediators
   - cons
-    - TODO
+    - mediator may become a God Object (a bad anti-pattern) over time
 - misc
-  - TODO
+  - like a party planner who handles chats and actions between guests at a party
+  - middleman that lets 2+ clients talk to each other via itself
+  - AKA intermediary, controller, broker
+  - Mediator vs Observer pattern:
+    - both
+      - involve a middle object that links senders and receivers
+    - mediator
+      - aim: reduce inter-needs amongst objects
+    - observer
+      - aim: 1-M connections between objects
+  - =
+    - mediator interface +
+    - concrete mediator class +
+    - colleague / component interface (optional) +
+    - concrete colleague / component class(es)
+  - colleagues are unknown to each other
+  - mediator stores refs to all colleagues
+  - mediator has event handlers for each colleague

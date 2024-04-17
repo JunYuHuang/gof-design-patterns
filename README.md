@@ -26,7 +26,7 @@ Each folder's README has instructions on how to run the code.
 | ✅   | Command                 | Behavioral           |
 |      | Interpreter             | Behavioral           |
 | ✅   | Iterator                | Behavioral           |
-|      | Mediator                | Behavioral           |
+| ✅   | Mediator                | Behavioral           |
 |      | Memento                 | Behavioral           |
 | ✅   | Observer                | Behavioral           |
 | ✅   | State                   | Behavioral           |
