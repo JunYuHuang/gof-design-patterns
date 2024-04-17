@@ -1,6 +1,6 @@
 # Memento
 
-The Memento pattern TODO
+The Memento pattern allows saving to and restoring from an object's old state while hiding the object's guts.
 
 ## Quick Start
 
