@@ -2,13 +2,32 @@
 
 - name: Interpreter
 - problem:
-  - TODO
+  - must interpret a language
+  - can describe statements in language as abstract syntax trees
+  - language grammar is simple
 - solution:
-  - TODO
+  - build a reader and doer for a custom language
 - trade-offs:
   - pros
-    - TODO
+    - easy to change and extend grammar
+    - easy to build grammar
+    - easy to add new ways to interpret expressions
   - cons
-    - TODO
+    - hard to upkeep complex grammar
 - misc
-  - TODO
+  - like having a wizard who can translate and execute commands in a text written in a special language
+  - like writing your own coding language
+  - structure =
+    - abstract expression class +
+    - concrete terminal expression class +
+    - concrete non-terminal expression class (optional?) +
+    - context object / class +
+    - client interpreter class / code
+  - terminal expression: like a leaf node in a tree
+  - non-terminal expresison: like a non-leaf node in a tree
+  - context: holds info global to interpreter
+    - e.g. input and output stream
+  - client:
+    - program that builds or gets the abstract syntax tree (AST)
+    - AST is a set (e.g. tree, list) of terminal + non-terminal objects
+    - calls the `interpret` method

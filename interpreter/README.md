@@ -1,6 +1,6 @@
 # Interpreter
 
-The Interpreter pattern TODO
+The Interpreter pattern allows a custom language to be read and run / performed.
 
 ## Quick Start
 
