@@ -1,6 +1,6 @@
 # Visitor
 
-The Visitor pattern TODO
+The Visitor pattern allows parting actions from objects on which they work on.
 
 ## Quick Start
 

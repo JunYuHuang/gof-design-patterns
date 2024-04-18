@@ -2,13 +2,38 @@
 
 - name: Visitor
 - problem:
-  - TODO
+  - must operate on all nodes of a complex object structure
+  - can tidy extra behaviours' business logic
+  - a behaviour applies to only some subclasses of a base interface or class
 - solution:
-  - TODO
+  - is an action done on object nodes of a (composite) structure
+  - allows parting actions from objects on which they work on
 - trade-offs:
   - pros
-    - TODO
+    - easy to add actions
+    - gathers related actions and splits unrelated ones
+    - can visit rank-varied elements
+      - e.g. leaf and nodes are treated the same
+    - visitors can collect state
   - cons
-    - TODO
+    - hard to add & remove concrete elements
+      - must update all visitors if so
+    - breaks class wrappers / encapsulation
 - misc
-  - TODO
+  - like being a wizard who interacts with unlike creatures in a forest in a tailored way
+  - moves a subclass' certain actions to a middle class (the visitor)
+  - uses double-dispatch method
+  - structure =
+    - visitor interface +
+    - concrete visitor class(es) +
+    - element interface +
+    - concrete element class(es)
+  - visitor is like a command for the element classes
+  - concrete visitor:
+    - defines 1+ concrete visit methods for each unlike element class
+    - unlike visitors each
+      - have methods that have same names and signatures
+      - have a set of methods that behave in the same style unique to the visitor class
+  - concrete element:
+    - in its `accept()` method, calls the right concrete visit method in the concrete visitor passing in itself (the element object)
+  - like better Command pattern
