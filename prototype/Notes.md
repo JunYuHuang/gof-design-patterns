@@ -2,13 +2,25 @@
 
 - name: Prototype
 - problem:
-  - TODO
+  - code will not rely on concrete classes of objects to copy
+  - want fewer subclasses that vary only in how they first create their objects
+  - don't want a deeply nested rank of class factories
 - solution:
-  - TODO
+  - allows copying present objects while the code does not rely on their classes
 - trade-offs:
   - pros
-    - TODO
+    - can clone objects without coupling to concrete classes
+    - easy to create new objects
+    - create new objects by changing structure
+    - less subclasses
   - cons
-    - TODO
+    - tricky to clone complex (subclass) objects
 - misc
-  - TODO
+  - i.e. clone; like making copies of existing objects via a magic spell and customizing them to make them unique
+  - TLDR: add a `clone()` method to a class
+  - structure =
+    - prototype interface / abstract class +
+    - concrete prototype class(es) +
+    - client code
+  - prototype interface / abstract class has `clone()` method
+  - `clone()` method is like a facade for the class constructor

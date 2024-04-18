@@ -1,6 +1,6 @@
 # Prototype
 
-The Prototype pattern TODO
+The Prototype pattern allows copying present objects while having the code not rely on their classes.
 
 ## Quick Start
 
